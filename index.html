@@ -42,20 +42,38 @@ background:black;
 </style>
 </head>
 <body>
-<div id="logo"><img src="Anime-Manga-Shield-Logo-Emblem-Sign-Dragon-Car-styling-Decals-Car-Stickers.jpg" style="width:50px;height:50px;"></div>
+  <div id="logo"><img src="Anime-Manga-Shield-Logo-Emblem-Sign-Dragon-Car-styling-Decals-Car-Stickers.jpg" style="width:50px;height:50px;"></div>
 <div id="top_menu" width:100% <h1 style="font-size:50px"><center>EA<a href="#";color:white;font-size:30px></a></center></h1>
 </div>
 <hr>
 <div class="row">
   <div class="col" id="demo1"></div>
-  <div class="col" id="demo"><p><b>LOGIN</b></p><form action="/action_page.php">
-  <p style="color:white;">USERNAME:<br>
-  <input type="text" name="username">
-  <br>
-  PASSWORD:<br>
-  <input type="text" name="password">
-  <br><br>
-  <input type="submit" value="Submit"></div>
-</div>
-</body>
-</html>
+  <div class="col" id="demo"><p><b>LOGIN</b></p>
+    <form name="Form1" method="post">
+      <p style="color:white;">USERNAME:<br>
+        <input type="text" name="username">
+        <br>
+        PASSWORD:<br>
+        <input type="text" name="password">
+        <br><br>
+        <INPUT type="button" value="Submit" name=button1 onclick="return OnButton1();">
+          <INPUT type="button" value="Sign-up" name=button2 onclick="return OnButton2();">
+          </form>
+          </div>
+          <script language="Javascript">
+          <!--
+          function OnButton1()
+          {
+            document.Form1.action = ""
+            document.Form1.target = "_blank";    // Open in a new window
+            document.Form1.submit();             // Submit the page
+            return true;
+          }
+          function OnButton2()
+          {
+            location.replace("C:/ Users/kumar/Desktop/demo1.html")
+          }-->
+      </script>
+      <noscript>You need Javascript enabled for this to work</noscript>
+    </body>
+    </html>
