@@ -1,69 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style>
-#top_menu{
- height: 50px;
-    width: 100%;
-background-color:black;
-    color:white;
-}
-#demo1{
-background-image: url('FRAME_09_EX+(00001).jpg');
-}
-h1{
-background-color: grey;
-}
-  p{
-    text-align:center;
-    color:white;
-  }
-#logo
-{
-    float: left;
-}
-.row {
-  display: flex;
-}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
 
-.col {
-  flex: 1;
+    @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 1000px;
+      }
+    }
 
-  padding: 12em;
-  border: solid;
-}
-a {
-color: inherit;
-      text-decoration:none;
-   }
-#demo{
-background:black;
-}
-</style>
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 650px;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+  </style>
 </head>
+
 <body>
-  <div id="logo"><img src="Anime-Manga-Shield-Logo-Emblem-Sign-Dragon-Car-styling-Decals-Car-Stickers.jpg" style="width:50px;height:50px;"></div>
-<div id="top_menu" width:100% <h1 style="font-size:50px"><center>EA SPORTS<a href="#";color:white;font-size:30px></a></center></h1>
-</div>
-<hr>
-<div class="row">
-  <div class="col" id="demo1"></div>
-  <div class="col" id="demo"><p><b>REGISTRATION</b></p>
-    <form name="Form1" method="post">
-      <p style="color:white;">NAME:<br>
-        <input type="text" name="username">
-        <br>
-        EMAIL:ID:<br>
-        <input type="text" name="emailid">
-        <br>
-        PHONE:<br>
-        <input type="text" name="phone1">
-        <br>
-        PASSWORD:<br>
-        <input type="password" name="pass">
-        <br><br>
-        <INPUT type="button" value="Submit" name=button1 onclick="return OnButton1();">
-          </form>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="" target="_blank">
+        <strong>EA SPORTS</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="" target="_blank">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="" target="_blank">About Us</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-warning btn-sm">Sign In</button>
+        <button type="button" class="btn btn-warning btn-sm" onclick="https://www.google.com">Sign Up</button>
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Full Page Intro -->
+  <div class="view full-page-intro" style="background-image: url('http://heavenwalls.com/wp-content/uploads/2017/11/Red-Dice-Background-Wallpaper-Desktop-High-Quality-For-Black.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="container">
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 white-text text-center text-md-left">
+            <br>
+            <br>
+            <h1 class="display-4 font-weight-bold">EA SPORTS</h1>
+
+            <hr class="hr-light">
+            <h1 class="font-italic">A division of Electronic Arts that develops and publishes sports video games.
+
+</h1>
+            </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 col-xl-5 mb-4">
+
+            <!--Card-->
+            <div class="card">
+
+              <!--Card content-->
+              <div class="card-body">
+
+                <!-- Form -->
+                
+<!-- Material form register -->
+<form>
+    <p class="h4 text-center mb-4">Sign up</p>
+
+    <!-- Material input text -->
+    <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="materialFormRegisterNameEx" class="form-control">
+        <label for="materialFormRegisterNameEx">Your name</label>
+    </div>
+
+    <!-- Material input email -->
+    <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input type="email" id="materialFormRegisterEmailEx" class="form-control">
+        <label for="materialFormRegisterEmailEx">Your email</label>
+    </div>
+
+    <!-- Material input phone -->
+    <!-- Material input -->
+    <div class="md-form">
+      <i class="fa fa-phone prefix grey-text"></i>
+      <input type="text" id="form1" class="form-control">
+      <label for="form1" >Your Phone</label>
+      </div>
+
+    <!-- Material input password -->
+    <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input type="password" id="materialFormRegisterPasswordEx" class="form-control">
+        <label for="materialFormRegisterPasswordEx">Your password</label>
+    </div>
+
+    <div class="text-center mt-4">
+        <button class="btn btn-primary" type="submit">Register</button>
+    </div>
+</form>
+<!-- Material form register -->
+                      
+                <!-- Form -->
+
+              </div>
+
+            </div>
+            <!--/.Card-->
+
           </div>
-        </body>
-        </html>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+  </div>
+  <!-- Full Page Intro -->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+     
+
+      <br>
+      <br>
+      <br>
+      <br>
+       <p class="text-center">MAIN CONTENT</p>
+      <br>
+      <br>
+      <br>
+      <br>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
